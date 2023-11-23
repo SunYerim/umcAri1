@@ -38,8 +38,9 @@ public enum ErrorStatus implements BaseErrorCode {
                 .build();
     }
 
+
     @Override
-    public ErrorReasonDTO getReasonHttpStatus() {
+    public ErrorReasonDTO getReasonHttpsStatus() {
         return ErrorReasonDTO.builder()
                 .message(message)
                 .code(code)
